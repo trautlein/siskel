@@ -18,7 +18,7 @@ var Movies = Backbone.Collection.extend({
   model: Movie,
 
   initialize: function() {
-    // YOUR CODE HERE
+    this.on('change', this.sort, this);
   },
 
   comparator: 'title',
