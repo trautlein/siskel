@@ -18,13 +18,14 @@ var Movies = Backbone.Collection.extend({
   model: Movie,
 
   initialize: function() {
-// 
+    // YOUR CODE HERE
   },
 
   comparator: 'title',
 
   sortByField: function(field) {
     this.comparator = field;
+    this.sort();
   }
 
 });
